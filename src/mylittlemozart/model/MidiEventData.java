@@ -1,4 +1,4 @@
-package mylittlemozart.module;
+package mylittlemozart.model;
 
 public class MidiEventData {
 	
