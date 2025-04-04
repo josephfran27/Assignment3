@@ -5,6 +5,15 @@ public class MidiEventData {
 	private int startEndTick, velocity, note, channel, noteOnOff;
 	private int instrument;
 	
+	/**
+	 * This is the constructor for a MidiEventData object.
+	 * @param startEndTick: The tick when the event should occur.
+	 * @param velocity: The volume of the note.
+	 * @param note: The note number.
+	 * @param channel: The MIDI channel.
+	 * @param instrument: The MIDI instrument associated with the note.
+	 * @param noteOnOff: The MIDI command.
+	 */
 	public MidiEventData (int startEndTick, int velocity, int note, int channel, int instrument, int noteOnOff) {
 		this.startEndTick = startEndTick;
 		this.velocity = velocity; //hello
@@ -14,8 +23,7 @@ public class MidiEventData {
 		this.noteOnOff = noteOnOff;
 	}
 	
-	//test
- 
+	//These methods are the getters and setters for the different fields in the MIDI event.
 	public int getStartEndTick() {
 		return startEndTick;
 	}

@@ -10,7 +10,15 @@ import javax.sound.midi.*;
 
 import mylittlemozart.model.MidiEventData;
 
+
 public class MidiCsvParser {
+	/**
+	 * This method parses through the mystery_song.csv file, which is the parameter that is passed. It works by copying
+	 * the data of the individual events into an object, and then adding it to the events list.
+	 * @param filename: The file that is to be read, in this case it is mystery_song.csv.
+	 * @return: The list of each event is returned.
+	 * @throws IOException: The exception if the file can't be found or read.
+	 */
 	public static List<MidiEventData> parseCsv(String filename) throws IOException {
 		List<MidiEventData> events = new ArrayList<>();
 		try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
